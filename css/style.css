@@ -52,14 +52,79 @@ button {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-
-  /*outline: 2px solid tomato;*/
 }
 
 /*---------------хедер---------------*/
 
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .conteiner-header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logotype {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+
+.logo-decor {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.mobile-modal-btn-open {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: solid 1px pink;
+  height: 22px;
+}
+
+/* .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.conteiner-header {
+  display: flex;
+  background-color: pink;
 }
 
 .header-navigation {
@@ -73,27 +138,20 @@ button {
   gap: 40px;
 }
 
-.current {
-  position: relative;
+.header-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -28px;
-  background-color: var(--accent-baccolor-btn);
-  border-radius: 2px;
-}
-
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+.header-link:hover,
+.header-link:focus {
+  color: #4d5ae5;
 }
 
 .logotype {
@@ -124,23 +182,24 @@ button {
   color: #4d5ae5;
 }
 
-.header-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.current {
+  position: relative;
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: #4d5ae5;
+.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -28px;
+  background-color: var(--accent-baccolor-btn);
+  border-radius: 2px;
 }
+
 
 .contacts {
+  display: flex;
   margin-left: auto;
 }
 
@@ -162,10 +221,25 @@ button {
 .contacts-mail:hover,
 .contacts-mail:focus {
   color: #404bbf;
-}
+} */
 
 /*---------------секція-1---------------*/
+
 .main {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Mobile/mobile_office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* .main {
   padding-top: 188px;
   padding-bottom: 188px;
 
@@ -220,11 +294,11 @@ button {
   color: var(--accent-color-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
+} */
 
 /*---------------секція-2---------------*/
 
-.about {
+/* .about {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -277,11 +351,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--about-text-color);
-}
+} */
 
 /*---------------секція-3---------------*/
 
-.doing {
+/* .doing {
   padding-top: 0;
   padding-bottom: 120px;
 }
@@ -300,19 +374,17 @@ button {
 .doing-list {
   display: flex;
   align-items: center;
-  /*justify-content: space-between;*/
   flex-wrap: wrap;
   gap: 24px;
-  /*flex-basis: calc((100-20px)/3);*/
 }
 
 .doing-item {
   width: calc((100% - 48px) / 3);
-}
+} */
 
 /*---------------секція-4---------------*/
 
-.team {
+/* .team {
   background: #f4f4fd;
 
   padding-top: 120px;
@@ -352,8 +424,6 @@ button {
 }
 
 .conteiner-team {
-  /*outline: 2px solid violet;*/
-
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: #ffffff;
@@ -402,11 +472,11 @@ button {
 
 .team-social-link:is(:hover, :focus) {
   background-color: var(--accent-baccolor-btn);
-}
+} */
 
 /*---------------секція-5---------------*/
 
-.customers {
+/* .customers {
   padding-top: 130px;
   padding-bottom: 120px;
 }
@@ -450,11 +520,11 @@ button {
 .customers-link:is(:hover, :focus) {
   border-color: var(--accent-baccolor-btn);
   color: var(--accent-baccolor-btn);
-}
+} */
 
 /*---------------футер---------------*/
 
-.footer {
+/* .footer {
   background: #2e2f42;
 
   padding-top: 100px;
@@ -513,7 +583,6 @@ button {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  /*display: flex;*/
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -623,15 +692,11 @@ button {
 .icon-frame {
   fill: #ffffff;
   margin-left: 16px;
-
-  /*position: absolute;
-  top: 0;
-  right: 0;*/
-}
+} */
 
 /*===========partfolio.html===========*/
 
-.hero {
+/* .hero {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -750,11 +815,11 @@ button {
 .image-item:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
 /*===========modal===========*/
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -827,11 +892,11 @@ button {
 
 .btn-modal-close:is(:hover, :focus) .btn-modal-close-icon {
   fill: #ffffff;
-}
+} */
 
 /*===========modal-form===========*/
 
-.modal-text {
+/* .modal-text {
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -991,5 +1056,4 @@ button {
 
 .form-button:is(:hover, :focus) {
   background-color: var(--accent-baccolor-btn);
-}
-
+} */

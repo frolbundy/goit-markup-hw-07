@@ -1,0 +1,81 @@
+@media screen and (min-width: 768px) {
+  .conteiner {
+    max-width: 768px;
+  }
+
+  .mobile-modal-btn-open {
+    display: none;
+  }
+
+  .header-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 120px;
+  }
+
+  .header-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: #4d5ae5;
+  }
+
+  .current {
+    position: relative;
+  }
+
+  .current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -18px;
+    background-color: var(--accent-baccolor-btn);
+    border-radius: 2px;
+  }
+
+  .contacts {
+    display: flex;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contacts-tel,
+  .contacts-mail {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+
+  .contacts-tel:hover,
+  .contacts-tel:focus {
+    color: #404bbf;
+  }
+
+  .contacts-mail:hover,
+  .contacts-mail:focus {
+    color: #404bbf;
+  }
+}
