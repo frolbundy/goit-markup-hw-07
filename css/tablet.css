@@ -1,10 +1,14 @@
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .conteiner {
     max-width: 768px;
   }
 
   .mobile-modal-btn-open {
     display: none;
+  }
+
+  .header {
+    padding: 12px 0px 10px 0px;
   }
 
   .header-navigation {
@@ -45,13 +49,14 @@
     width: 100%;
     height: 4px;
     left: 0;
-    bottom: -18px;
+    bottom: -28px;
     background-color: var(--accent-baccolor-btn);
     border-radius: 2px;
   }
 
   .contacts {
     display: flex;
+    padding-top: 12px;
   }
 
   .contacts-list {
@@ -77,5 +82,22 @@
   .contacts-mail:hover,
   .contacts-mail:focus {
     color: #404bbf;
+  }
+
+  /*====================MAIN===============================*/
+
+  .main {
+    padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Tablet/ofice_tablet.jpg);
+  }
+
+  .main-title {
+      font-size: 56px;
+      line-height: 1.1;
+      margin-bottom: 40px;
   }
 }
