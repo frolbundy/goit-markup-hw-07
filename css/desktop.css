@@ -110,11 +110,18 @@
 
   .main {
     padding-bottom: 188px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/Tablet/ofice_tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desktop/ofice_desktop-2x.jpg);
+    }
   }
 
   .main-title {
@@ -260,8 +267,8 @@
   }
 
   .customers-list {
-      gap: 24px;
-      flex-wrap: nowrap;
+    gap: 24px;
+    flex-wrap: nowrap;
   }
 
   .customers-item {
@@ -276,53 +283,80 @@
     border-color: var(--accent-baccolor-btn);
     color: var(--accent-baccolor-btn);
   }
- /*====================footer======================*/
- .footer {
-padding: 100px 0px;
- }
+  /*====================footer======================*/
+  .footer {
+    padding: 100px 0px;
+  }
 
- .conteiner-footer {
-     display: flex;
-     align-items: baseline;
-     flex-direction: row;
- }
+  .conteiner-footer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+  }
 
- .footer-soc-conteiner {
-     margin-left: 120px;
- }
+  .footer-soc-conteiner {
+    margin-left: 120px;
+  }
 
- .footer-soc-list {
-     display: flex;
-     gap: 16px;
- }
+  .footer-soc-list {
+    display: flex;
+    gap: 16px;
+  }
 
- .text-soc {
-text-align: start;
- }
+  .text-soc {
+    text-align: start;
+  }
 
- .logotype-footer {
-     margin-bottom: 16px;
-     justify-content: flex-start;
- }
+  .logotype-footer {
+    margin-bottom: 16px;
+    justify-content: flex-start;
+  }
 
- .footer-soc-item {
-     width: 40px;
-     height: 40px;
- }
+  .footer-soc-item {
+    width: 40px;
+    height: 40px;
+  }
 
+  .footer-form-container {
+    margin-left: auto;
+    width: 453px;
+  }
 
- .footer-form-container {
-     margin-left: auto;
-     width: 453px;
- }
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
 
- .footer-form {
-flex-direction: row;
-gap: 24px;
- }
+  .email-form {
+    width: 264px;
+  }
 
- .email-form {
-     width: 264px;
- }
+  /*===========modal===========*/
 
+  .backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: 0;
+  }
+
+  .modal {
+    width: 408px;
+  }
 }

@@ -5,8 +5,31 @@
     margin-right: auto;
   }
 
-  .conteiner-team{
+  .conteiner-team {
     max-width: 268px;
   }
-}
 
+  .modal {
+    width: 392px;
+  }
+
+  .main {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Tablet/ofice_tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Tablet/ofice_tablet-2x.jpg);
+    }
+  }
+}
