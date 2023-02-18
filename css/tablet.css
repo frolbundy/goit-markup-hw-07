@@ -8,6 +8,11 @@
     padding: 0px 108px;
   }
 
+  .conteiner-customers{
+    max-width: 768px;
+    padding: 0px 108px;
+  }
+
   .doing{
     display: none;
   }
@@ -181,13 +186,18 @@
 
 }
 
+.conteiner .conteiner-team{
+
+}
+
 /*=====================FOOTER===========*/
+
 .conteiner-footer {
     flex-direction: row;
    gap: 24px;
    flex-wrap: wrap;
    align-items: baseline;
-   justify-content: center;
+   justify-content: start;
 }
 
 .logotype-footer {

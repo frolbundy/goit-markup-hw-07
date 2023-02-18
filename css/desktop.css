@@ -110,6 +110,7 @@
 
   .main {
     padding-bottom: 188px;
+    padding-top: 188px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -121,6 +122,9 @@
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/desktop/ofice_desktop-2x.jpg);
+        max-width: 1440px;
+        background-position: 50% 50%;
+        margin: 0 auto;
     }
   }
 
@@ -176,10 +180,12 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     margin-bottom: 8px;
+    text-align: start;
   }
 
   .about-item-text {
     font-weight: 400;
+    text-align: start;
   }
   /*====================SECTION3===============================*/
   .doing {
