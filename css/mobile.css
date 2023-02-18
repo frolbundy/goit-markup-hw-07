@@ -32,4 +32,8 @@
         url(../images/Tablet/ofice_tablet-2x.jpg);
     }
   }
+
+    .menu-contacts-mail {
+      font-size: 36px;
+    }
 }

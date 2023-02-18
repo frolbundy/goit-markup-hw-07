@@ -89,6 +89,11 @@
     color: #404bbf;
   }
 
+  
+.mobile-modal-btn-open{
+  display: none;
+}
+
   /*====================MAIN===============================*/
 
   .main {
