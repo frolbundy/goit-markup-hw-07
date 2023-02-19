@@ -107,7 +107,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-    url(../images/Tablet/ofice_tablet.jpg);
+    url(../images/desktop/ofice_desktop-2x.jpg);
   }
 
     @media (min-device-pixel-ratio: 2),
@@ -116,7 +116,7 @@
       .main {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-          url(../images/desktop/ofice_desktop-2x.jpg);
+          url(../images/desktop/ofice_desktop-2x.jpg)
       }
     }
 
@@ -183,10 +183,6 @@
 
 .customers-item {
     width: calc((100% - 48px) / 3);
-
-}
-
-.conteiner .conteiner-team{
 
 }
 
