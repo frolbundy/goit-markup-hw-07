@@ -50,8 +50,8 @@ button {
 
 .conteiner {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /*---------------хедер---------------*/
@@ -73,11 +73,11 @@ button {
     display: none;
   }
 
-  .conteiner-team {
+  /* .conteiner-team {
     max-width: 268px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 }
 
 .header {
@@ -127,6 +127,7 @@ button {
   border: none;
   background-color: #ffffff;
   margin-left: auto;
+  padding: 0px;
 }
 
 .mobile-menu {
@@ -139,16 +140,18 @@ display: flex;
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
-  padding: 40px;
-  padding-top: 80px;
+  padding: 80px 0 40px;
 }
 
-.mobile-menu > .conteiner{
+.mobile-menu > .conteiner-burger{
 height: 100%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 overflow-y: auto;
+padding: 0 40px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .is-hidden {
@@ -227,9 +230,9 @@ overflow-y: auto;
 
 .menu-adress > .team-social-list{
   display: flex;
-  gap: 56px;
+  max-width: 328px;
   margin-top: 48px;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .menu-adress > .team-social-item{
@@ -615,6 +618,7 @@ overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 
 .team-item {
@@ -1345,6 +1349,7 @@ overflow-y: auto;
 
 .modal {
   width: 90%;
+  max-width: 392px;
   min-height: 586px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1516,6 +1521,7 @@ overflow-y: auto;
   display: block;
   cursor: pointer;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .modal-form-input-check:checked + .form-user-policy::before {
